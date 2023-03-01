@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="tueats.css">
+
+<script type="text/javascript" src="assign2.js"></script>
+</head>
+
+<body>
+                             <!--                           HTML Site                                       -->
+    <!-- <form name="assignment2" method="POST" action="tueats_completed.html" onkeypress="ReferralFunction()" onSubmit = "return Verification() && PasswordVerification()"> -->
+    <form name="assignment2" id="form" method="GET" action="tueats_completed.html"  onSubmit = "return Validation()" >
+        <h1>Welcome to TUEats</h1>
+            <fieldset>
+                <legend>Sign Ups</legend>
+
+                <label for="fname">Username:</label>
+                    <input type="text" id="username" placeholder="username" required="" name="username" >
+                <br><br>
+
+                <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="email" required="" name="email">
+                <br><br>
+
+                                    <img src="towson.png" alt="towson" >
+
+                <label for="referral">Referral Code:</label>
+                    <input type="text" id="referral" placeholder="optional" name="referral" >
+                <br><br>
+
+                <label for="password">Password:</label>
+                    <input type="text" id="password" placeholder="password" required="" name="password">
+                <br><br>
+
+                <label for="vpassword">Verify Password:</label>
+                    <input type="text" id="vpassword" required="" name="vpassword">
+                <br><br>
+                    <input type="checkbox" id="checkbox" name="checkbox" value=" True " onSubmit = "checkBox()">Sign up for our newsletter?
+                <br><br>
+
+                <!-- <button type="submit" value="submit">Submit</button> -->
+                <input type="submit" value="Submit">
+            </fieldset>
+            
+            <!-- gets value from id tag (which came from form) and sets to a variable
+            <script>
+                const form = document.getElementById("form");
+                const userName = document.getElementById("username");
+                const password = document.getElementById("password");
+                const email = document.getElementById("email");
+                const referral = document.getElementById("referral");
+                const vpassword = document.getElementById("vpassword");
+
+            // tells browser to "listen" for the 'submit' tag when fired off when the user clicks 
+                form.addEventListener("submit", function(e) {
+                    e.preventDefault();
+                    
+                    const userNameValue = userName.value;
+                    const passwordValue = password.value;
+                    const vpasswordValue = vpassword.value;
+                    const emailValue = email.value;
+                    const referralValue = referral.value;
+                    
+                    localStorage.setItem("user-name", userNameValue);
+                    localStorage.setItem("password", passwordValue);
+                    localStorage.setItem("email", emailValue);
+                    localStorage.setItem("referral", referralValue);
+                    localStorage.setItem("vpassword", vpasswordValue);
+
+                    window.location.href = "tueats_completed.html";
+    
+                })
+            </script> -->
+
+            
+        <div class = "center">
+            <fieldset>  
+            
+                <p> Menu is subject to change, please visit our <a href="https://www.towson.edu">main site</a> for more information.</p>
+                    <table style="width:75%"> 
+                         
+                        <tr>
+                            <td colspan="3"></td>
+                            <td colspan="3"><b>Name</b></td>
+                            <td colspan="3"><b>Price</b></td>
+                            <td colspan="1"><b>Calories</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Item 1</td>
+                            <td colspan="3">Burger</td>
+                            <td colspan="3">$8</td>
+                            <td colspan="3">550</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Item 2</td>
+                            <td colspan="3">Mozzarella Sticks</td>
+                            <td colspan="3">$7</td>
+                            <td colspan="2" rowspan="2">400</th>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Item 3</td>
+                            <td colspan="3">Fries</td>
+                            <td colspan="3">$4</td>
+                        </tr>
+                    
+                    </table>
+            
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+table, th, td,tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #808080
+ }
+  .center {
+    text-align: center;
+  }
+  img{
+    width: 600px;
+    height: 100px;
+    float: right;
+  }
+  size {
+    width:75%;
+  }
+  h1, style {
+    text-align: left;
+   color:#ffBB00;
+  }
+  
+  a:hover{
+    color: gold;
+  }
+  /* img[src*="towson.png"] {
+    background-image: url("towson.png");
+    width: 00;
+    height: 100;
+    padding: 10 220 100 320;
+} */
